@@ -13,7 +13,7 @@ enableEmoji = true
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "red"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 5
+  showMenuItems = 6
   # show selector to switch language
   showLanguageSelector = false
   # set theme to full screen width
@@ -21,7 +21,7 @@ enableEmoji = true
   # center theme with default width
   centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  favicon = "https://ranvier.net/static/img/favicon.png"
 
 [languages]
   [languages.en]
@@ -52,6 +52,11 @@ enableEmoji = true
         identifier = "presentations"
         name = "Presentations"
         url = "/posts/presentations"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "resources"
+        name = "Resources"
+        url = "/posts/resources"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "about"
