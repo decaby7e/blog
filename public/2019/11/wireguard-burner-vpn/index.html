@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Wireguard Burner VPN :: Ranvier Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Introduction Have you ever gone to the conveinence store and bought a disposable phone as a kid? Maybe not, but I was always fascinated by those kinds of things and I did that! I thought that the idea of having a burner phone was interesting because it was another way to detach your name from whatever communication medium you were using. Nowadays anytime you communicate your name is always tied with that message."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.ranvier.net/2019/11/wireguard-burner-vpn/" />
+
+
+<link rel="stylesheet" href="https://blog.ranvier.net/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.ranvier.net/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.ranvier.net/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.ranvier.net/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Wireguard Burner VPN :: Ranvier Blog — " />
+<meta name="twitter:description" content="Introduction Have you ever gone to the conveinence store and bought a disposable phone as a kid? Maybe not, but I was always fascinated by those kinds of things and I did that! I thought that the idea of having a burner phone was interesting because it was another way to detach your name from whatever communication medium you were using. Nowadays anytime you communicate your name is always tied with that message." />
+<meta name="twitter:site" content="https://blog.ranvier.net/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Wireguard Burner VPN :: Ranvier Blog — ">
+<meta property="og:description" content="Introduction Have you ever gone to the conveinence store and bought a disposable phone as a kid? Maybe not, but I was always fascinated by those kinds of things and I did that! I thought that the idea of having a burner phone was interesting because it was another way to detach your name from whatever communication medium you were using. Nowadays anytime you communicate your name is always tied with that message." />
+<meta property="og:url" content="https://blog.ranvier.net/2019/11/wireguard-burner-vpn/" />
+<meta property="og:site_name" content="Wireguard Burner VPN" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2019-11-30 04:38:51 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Ranvier
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/posts/projects">Projects</a></li>
+        
+      
+        
+          <li><a href="/posts/tutorials">Tutorials</a></li>
+        
+      
+        
+          <li><a href="/about">About Me</a></li>
+        
+      
+        
+          <li><a href="/index.xml">RSS</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/posts/projects">Projects</a></li>
+      
+    
+      
+        <li><a href="/posts/tutorials">Tutorials</a></li>
+      
+    
+      
+        <li><a href="/about">About Me</a></li>
+      
+    
+      
+        <li><a href="/index.xml">RSS</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.ranvier.net/2019/11/wireguard-burner-vpn/">Wireguard Burner VPN</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2019-11-30
+    </span>
+    
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content">
+    
+
+<p><img src="/img/wg-burner.png" alt="Wireguard Burner" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Have you ever gone to the conveinence store and bought a disposable phone as a kid? Maybe not, but I was always fascinated by those kinds of things and I did that!
+I thought that the idea of having a burner phone was interesting because it was another way to detach your name from whatever communication medium you were using. Nowadays anytime you communicate your name is always tied with that message. Even if you decide to spin up a VPN on a VPS provider like AWS, Digital Ocean, etc. your name is still tied to whatever payment method you use! Even when you get a VPN up and running on a VPS or a personal computer somewhere, that IP is then tied to whatever actions you perform on the internet. So even though you&rsquo;ve gone through all the trouble of attempting to hide your <strong>real</strong> IP, you&rsquo;ve effectively made yourself another <strong>real</strong> IP 😑.
+If you choose to go with a VPN provider like Private Internet Access or NordVPN, you can circumvent this issue but now you have to worry about <em>them</em> taking your information instead of the ISP doing it. What to do&hellip;
+I figured that the most practical approach to this situation was to look back to those simpler times where you could go to the store and buy a disposable communication medium. What if we could apply this concept to a VPN&hellip;?</p>
+
+<p>In this project, I aim to create a &ldquo;burner&rdquo; VPN hosted on Digital Ocean. This involves creating script(s) that will do the following:</p>
+
+<p>&nbsp;</p>
+
+<ol>
+<li><p>Create a Droplet and upload a private SSH key that can be disposed of once done with it.</p></li>
+
+<li><p>Install the necessary software for hosting a VPN server and other useful utilities.</p></li>
+
+<li><p>Serve up the client configuration in a user friendly manner for quick and easy connection to the server.</p></li>
+
+<li><p>Start up the VPN server and begin traffic forwarding.</p></li>
+
+<li><p>Once the user decides they want to nuke their server, hit a button and make it disappear.</p></li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>Sounds simple enough (and it mostly is) so lets get into it!</p>
+
+<hr />
+
+<h1 id="working-with-the-digital-ocean-api">Working with the Digital Ocean API</h1>
+
+<h2 id="defining-project-secrets">Defining Project Secrets</h2>
+
+<p>Before we can even begin to work with our Droplet we need to define some common authorization variables that will be used for the duration of the project. To interact with the Digital Ocean API we need to generate an API token from our user dashboard. Additionally, we need to have an SSH key to be able to connect to our Droplet once it is created. I created a JSON object to hold all of this information and a template for this object is below:</p>
+
+<pre><code class="language-json">{
+    &quot;user_token&quot;: &quot;DIGITAL OCEAN API TOKEN STRING&quot;,
+    &quot;ssh_fingerprint&quot;: &quot;SSH KEY FINGERPRINT STRING&quot;,
+    &quot;ssh_pubkey&quot;: &quot;SSH PUBLIC KEY STRING&quot;,
+    &quot;ssh_privkey&quot;: &quot;NAME OF SSH PRIVATE KEY FILE&quot;
+}
+</code></pre>
+
+<p>Once we have our secrets.json file defined, we can move on to the next step: creating and interacting with our Droplet.</p>
+
+<h2 id="creating-a-droplet-object">Creating a Droplet object</h2>
+
+<p>In order to keep things nice and tidy, it would be nice to create an object that represents our Droplet rather than attempting to integrate this into the main script. Additionally, we can reuse this object in future projects and add onto it if we&rsquo;d like to. The basic Droplet object that was created for this project is shown below:</p>
+
+<pre><code class="language-python">#!/usr/bin/python3
+
+import json
+import requests
+import os
+import time
+
+class Droplet:
+    def __init__(self, token, name, region, ssh_key_fingerprint):
+        self.api_url_base = 'https://api.digitalocean.com/v2/'
+        self.status = 'destroyed'
+        
+        self.token = token
+        self.name = name
+        self.region = region
+
+        self.privkey = 'privkey'
+        self.ssh_key_fingerprint = ssh_key_fingerprint
+        
+        self.headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer {0}'.format(self.token)
+        }
+
+    #Creates a new Droplet with the given information
+    def create(self):
+        # Create a new Droplet with object information
+        active_url = '{0}droplets'.format(self.api_url_base)
+        data = json.dumps({
+            &quot;name&quot;: &quot;{0}&quot;.format(self.name),
+            &quot;region&quot;: &quot;{0}&quot;.format(self.region),
+            &quot;size&quot;: &quot;s-1vcpu-1gb&quot;,
+            &quot;image&quot;: &quot;ubuntu-18-04-x64&quot;,
+            &quot;ssh_keys&quot;: [&quot;{0}&quot;.format(self.ssh_key_fingerprint)],
+            &quot;backups&quot;: False,
+            &quot;ipv6&quot;: False,
+            &quot;user_data&quot;: None,
+            &quot;private_networking&quot;: None,
+            &quot;volumes&quot;: None,
+            &quot;tags&quot;: None})
+        response = requests.post(active_url, headers=self.headers, data=data)
+        
+
+        if response:
+            new_droplet = response.json()
+            self.id = new_droplet[&quot;droplet&quot;][&quot;id&quot;]
+            self.status = 'created'
+
+            print( 'Droplet {0} created.'.format(self.id) )
+        else:
+            print( 'Error: {0}'.format(response.json()['message']) )
+            return False
+
+
+        # Give some time between creation and getting the full Droplet information
+        time.sleep(2)
+
+
+        # Get the full Droplet JSON
+        active_url='{0}droplets/{1}'.format(self.api_url_base, self.id)
+        response = requests.get(active_url, headers=self.headers)
+        
+        if response:
+            self.droplet_JSON = response.json()
+            self.ip = self.droplet_JSON[&quot;droplet&quot;][&quot;networks&quot;][&quot;v4&quot;][0][&quot;ip_address&quot;]
+            print ( 'Droplet IP: {0}'.format(self.ip) )
+            return True
+        else:
+            return False
+
+    #Destroys the Droplet
+    def destroy(self):
+        if(self.status == 'created'):
+            active_url = '{0}droplets/{1}'.format(self.api_url_base, self.id)
+            requests.delete(active_url, headers=self.headers)
+
+            print( 'Droplet {0} destroyed.'.format(self.id) )
+
+            self.status = 'destroyed'
+            self.id = None
+            self.ip = None
+            self.droplet_JSON = None
+
+            return True
+        
+        else:
+            return False
+
+    #Runs a command in the Droplet given a command and a private key
+    def run(self, command_string):
+        if self.status == 'created':
+            ssh_prefix='ssh -o StrictHostKeyChecking=no -i {0} root@{1}'.format(self.privkey, self.ip)
+            cmd='{0} \' {1} \''.format(ssh_prefix, command_string)
+            return os.system(cmd)
+        
+        else:
+            return None
+</code></pre>
+
+<p>With this, we can create and destroy a new Droplet as well as execute commands on it. The final step of this project is to create a script that uses this object to create and destroy a burner VPN.</p>
+
+<h2 id="burner-vpn-script">Burner VPN Script</h2>
+
+<p>The final script of this project involves implementing the Droplet object that we just created to create and destroy our burner VPN. Wireguard was chosen for this project for several reasons, the most important of which are because of its speed and simplicity in configuration. The finished script is below:</p>
+
+<pre><code class="language-python">#!/usr/bin/python3
+
+from Droplet import Droplet
+
+import json
+import requests
+
+import uuid
+
+import os
+import time
+from random import randint
+
+api_url_base = 'https://api.digitalocean.com/v2/'
+
+## Methods ##
+
+def add_ssh_key(token, name, pubkey):
+  curr_url = '{0}account/keys'.format(api_url_base)
+
+  headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer {0}'.format(token)
+        }
+
+  data = json.dumps(
+    {
+      &quot;name&quot;: &quot;{0}&quot;.format(name),
+      &quot;public_key&quot;: &quot;{0}&quot;.format(pubkey)
+    }
+  )
+
+  requests.post(curr_url, data=data, headers=headers)
+
+def del_ssh_key(token, fingerprint):
+  curr_url = '{0}account/keys/{1}'.format(api_url_base, fingerprint)
+
+  headers = {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer {0}'.format(token)
+          }
+
+  requests.delete(curr_url, headers=headers)
+
+def init_wg(droplet):
+  droplet.run('apt update &amp;&amp; add-apt-repository ppa:wireguard/wireguard &amp;&amp; apt install -y wireguard git python qrencode')
+
+  droplet.run('git clone https://github.com/decaby7e/wireguard-management')
+
+  droplet.run('wireguard-management/generate-wg-configs.sh -i {0}; cp configs/server/wg0.conf /etc/wireguard/'.format(droplet.ip))
+
+  # INSECURE: Exposes client and server private keys
+  # print(&quot;DEBUG: Serving up client configs...&quot;) #DEBUG
+  # listen_port = randint(20000, 50000)
+  # print('Visit {0}:{1} for configuration files.'.format(droplet.ip, listen_port))
+  # print('Press ctrl-c when finished.')
+  # cmd = 'python -m SimpleHTTPServer {0}'.format(listen_port)
+  # droplet.run(cmd)
+
+  droplet.run('qrencode -t ansiutf8 &lt; configs/client-2/wg2.conf')
+  input('&gt; Press enter when done.')
+
+  droplet.run('sysctl -w net.ipv4.ip_forward=1')
+
+  droplet.run('wg-quick up wg0')
+
+## Main ##
+
+def main():
+  global droplet
+
+  secrets = json.load(open('secrets.json', 'r'))
+  token=secrets['user_token']
+  droplet = Droplet(token, str(uuid.uuid1()), 'nyc3', secrets['ssh_fingerprint'])
+
+  print(&quot;&gt; Adding SSH key...&quot;)
+  add_ssh_key(token, droplet.name, secrets['ssh_pubkey'])
+
+  print(&quot;&gt; Creating Droplet...&quot;)
+  droplet.create()
+
+  server_online = False
+  print(&quot;&gt; Waiting for server to come online...&quot;)
+  while not server_online:
+    if(droplet.run('echo Connection Established') == 0):
+      server_online = True
+
+  print(&quot;&gt; Starting Instance...&quot;)
+  init_wg(droplet)
+  
+  input(&quot;Press any key to nuke instance. (DISABLE VPN ON CLINET BEFORE NUKING)&quot;)
+  
+  print(&quot;&gt; Removing Droplet...&quot;)
+  droplet.destroy()
+  
+  print(&quot;&gt; Removing SSH key...&quot;)
+  del_ssh_key(token, secrets['ssh_fingerprint'])
+
+if __name__ == '__main__':
+  try:
+    main()
+  except Exception as e:
+    print('Error: {0}'.format(e))
+    print('Error: Exception caught. Cleaning up...')
+    droplet.destroy()
+</code></pre>
+
+<p>Another project that I worked on is implemented in this script, where it is used to generate server and client configurations for Wireguard. This project can be found here: <a href="/posts/projects/wireguard-management">Wireguard Management Scripts</a></p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Here is a brief video that shows the entire setup process:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="/vid/wg-burner-tutorial.webm" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Wireguard Burner Setup"></iframe>
+</div>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>So it isnt&rsquo; exactly the same as the burner phones that I played with as a kid, but I think that what I have here will do a pretty good job at being close :p</p>
+
+<p>This project was a ton of fun to work on, even if it was during time that might&rsquo;ve been better for studying or sleep lol. There are many improvements that I can see being implemented in the future:</p>
+
+<ul>
+<li>Migrate the SSH key management to its own object / script / the existing Droplet object</li>
+<li>Create a new object that manages just the Digital Ocean account for things like SSH keys, authorization for API calls, etc.</li>
+</ul>
+
+<p>If you have any reccomendations or questions about this project, feel free to let me know about them at my <a href="mailto:jack.polk314@gmail.com">email</a>.</p>
+
+<hr />
+
+<h2 id="authors-notes">Authors Notes</h2>
+
+<ul>
+<li>I do recognize that when you create a Digital Ocean account your name and relevant information is tied to it. However, when there&rsquo;s a will there&rsquo;s a way: one way to circumvent this is to use <em>cough</em> disposable <em>cough</em> personal information tied to a disposable gift card. I don&rsquo;t know if this complies with Digital Ocean&rsquo;s policies and I don&rsquo;t care enough to find out. Therefore, I do not endorse doing this and if you choose to do so it is at your complete risk.</li>
+</ul>
+
+<h2 id="sources">Sources</h2>
+
+<ul>
+<li><a href="https://developers.digitalocean.com/documentation/v2/">Digital Ocean API Documentation</a></li>
+<li><a href="https://www.pngfind.com/mpng/ihwowoT_d-d-logo-png-dungeons-dragons-transparent-png/">Dragon used in post logo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DigitalOcean#/media/File:DigitalOcean_logo.svg">Digital Ocean logo</a></li>
+</ul>
+
+  </div>
+  <script src="https://utteranc.es/client.js"
+        repo="decaby7e/blog"
+        issue-term="pathname"
+        label="comment"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="https://blog.ranvier.net/2019/12/home-surveilance-system/">
+          <span class="button__icon">←</span>
+          <span class="button__text">Home Surveilance System</span>
+        </a>
+      </span>
+      
+      
+    </div>
+  </div>
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://blog.ranvier.net/assets/main.js"></script>
+<script src="https://blog.ranvier.net/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

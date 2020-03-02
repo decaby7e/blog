@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/tags/projects/</link>
+    <description>Recent content in projects on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2019 20:03:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wireguard AppIndicator</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-appindicator/</link>
+      <pubDate>Mon, 30 Dec 2019 20:03:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-appindicator/</guid>
+      <description>Wireguard AppIndicator At the time of writing, December of 2019, there exists no simple to use graphical interface for managing Wireguard connections as far as I&amp;rsquo;m concerned. To resolve this issue, I wanted to make an AppIndicator with the following capabilities:
+ View status of Wireguard interface Enable and disable Wireguard interface View and copy the IP address of the interface  I also wanted to be able to use this on both Gnome Shell systems and systems with only support for AppIndicators, so the script is able to be used as either a standalone script running in the background or as a Gnome Shell extension.</description>
+    </item>
+    
+    <item>
+      <title>Wireguard Management System - Concept Introduction</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</link>
+      <pubDate>Sat, 28 Dec 2019 23:49:20 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</guid>
+      <description>Introduction Wireguard is a beautiful thing 😭. But one thing that I have found to be a point of contention is the lack of a simple interface for managing an existing Wireguard server. From some light browsing, I have found a couple of solutions that are mainly geared towards enterprise use or paid services but no simple FOSS CLI alternatives. Therefore, I feel that it would be nice to have a simple Bash script or Python script to accomplish this task.</description>
+    </item>
+    
+    <item>
+      <title>Home Surveilance System</title>
+      <link>https://blog.ranvier.net/2019/12/home-surveilance-system/</link>
+      <pubDate>Wed, 25 Dec 2019 22:41:49 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/home-surveilance-system/</guid>
+      <description>Introduction Depending on where you live in the US, your area can either be considered very nice or appealing to drug addicts. In my case, the latter is more true than the former unfortunately. However, there is one thing that can help to prevent this predicament from impacting our lives too much: technology! Network cameras have become incredibly cheap and I have found that this offbrand IP camera has done a great job thus far.</description>
+    </item>
+    
+  </channel>
+</rss>

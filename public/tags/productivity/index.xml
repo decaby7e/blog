@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>productivity on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/tags/productivity/</link>
+    <description>Recent content in productivity on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2019 21:08:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Digital Note Solutions</title>
+      <link>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</link>
+      <pubDate>Sun, 29 Dec 2019 21:08:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</guid>
+      <description>Best Digital Note Solutions Over a course of around 4 years, I have jumped from platform to platform, deperately in search of an elegant and effective digital note taking solution for my personal and professional needs. I needed to find something that would allow me to make messy notes and to-do lists for school while at the same time having a structured, organized system for various professional and personal development projects.</description>
+    </item>
+    
+  </channel>
+</rss>

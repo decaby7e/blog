@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ranvier Blog</title>
+    <link>https://blog.ranvier.net/</link>
+    <description>Recent content on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2019 20:03:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wireguard AppIndicator</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-appindicator/</link>
+      <pubDate>Mon, 30 Dec 2019 20:03:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-appindicator/</guid>
+      <description>Wireguard AppIndicator At the time of writing, December of 2019, there exists no simple to use graphical interface for managing Wireguard connections as far as I&amp;rsquo;m concerned. To resolve this issue, I wanted to make an AppIndicator with the following capabilities:
+ View status of Wireguard interface Enable and disable Wireguard interface View and copy the IP address of the interface  I also wanted to be able to use this on both Gnome Shell systems and systems with only support for AppIndicators, so the script is able to be used as either a standalone script running in the background or as a Gnome Shell extension.</description>
+    </item>
+    
+    <item>
+      <title>Best Digital Note Solutions</title>
+      <link>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</link>
+      <pubDate>Sun, 29 Dec 2019 21:08:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</guid>
+      <description>Best Digital Note Solutions Over a course of around 4 years, I have jumped from platform to platform, deperately in search of an elegant and effective digital note taking solution for my personal and professional needs. I needed to find something that would allow me to make messy notes and to-do lists for school while at the same time having a structured, organized system for various professional and personal development projects.</description>
+    </item>
+    
+    <item>
+      <title>Wireguard Management System - Concept Introduction</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</link>
+      <pubDate>Sat, 28 Dec 2019 23:49:20 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</guid>
+      <description>Introduction Wireguard is a beautiful thing 😭. But one thing that I have found to be a point of contention is the lack of a simple interface for managing an existing Wireguard server. From some light browsing, I have found a couple of solutions that are mainly geared towards enterprise use or paid services but no simple FOSS CLI alternatives. Therefore, I feel that it would be nice to have a simple Bash script or Python script to accomplish this task.</description>
+    </item>
+    
+    <item>
+      <title>Home Surveilance System</title>
+      <link>https://blog.ranvier.net/2019/12/home-surveilance-system/</link>
+      <pubDate>Wed, 25 Dec 2019 22:41:49 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/home-surveilance-system/</guid>
+      <description>Introduction Depending on where you live in the US, your area can either be considered very nice or appealing to drug addicts. In my case, the latter is more true than the former unfortunately. However, there is one thing that can help to prevent this predicament from impacting our lives too much: technology! Network cameras have become incredibly cheap and I have found that this offbrand IP camera has done a great job thus far.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Docker</title>
+      <link>https://blog.ranvier.net/2019/12/introduction-to-docker/</link>
+      <pubDate>Tue, 17 Dec 2019 19:53:20 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/introduction-to-docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Useful Software</title>
+      <link>https://blog.ranvier.net/2019/12/useful-software/</link>
+      <pubDate>Tue, 17 Dec 2019 03:00:27 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/useful-software/</guid>
+      <description>A common theme in this catalogue of software is that most entries here are good looking, lightweight, and easy to install (with Docker). Please send me any suggestions for additions should you have any!
+Ubuntu Customizations For my personal desktop, I run the latest distribution of Ubuntu, which at the time of writing is 19.10. On here, I have some minor customizations that vastly improve my QoL:
+ Plank - An amazing dock solution that is dead simple and aesthetically pleasing Conky - System monitor program that is complicated to configure but reliable and simple when its up and running PopOS GNOME Shell Theme - All the beauty of PopOS along with the vanilla experience of good ol&amp;rsquo; Ubuntu Papirus Icon Pack - Ubuntu icons are getting better but Papirus still has my heart Dotfiles - Dotfiles that I use for customization across my machines Arronax - Program for creating and modifying .</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>https://blog.ranvier.net/2019/12/markdown-cheatsheet/</link>
+      <pubDate>Tue, 03 Dec 2019 01:39:06 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/markdown-cheatsheet/</guid>
+      <description>DISCLAIMER: This cheatsheet was sourced from Adam Pritchard because he did a great job. This is intended as a quick reference and showcase. For more complete info, see John Gruber&amp;rsquo;s original spec and the Github-flavored Markdown info page.
+Note that there is also a Cheatsheet specific to Markdown Here if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out more Markdown tools.
+Table of Contents Headers
+Emphasis
+Lists</description>
+    </item>
+    
+    <item>
+      <title>Wireguard Tutorial</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-tutorial/</link>
+      <pubDate>Tue, 03 Dec 2019 01:25:43 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wireguard Burner VPN</title>
+      <link>https://blog.ranvier.net/2019/11/wireguard-burner-vpn/</link>
+      <pubDate>Sat, 30 Nov 2019 04:38:51 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/11/wireguard-burner-vpn/</guid>
+      <description>Introduction Have you ever gone to the conveinence store and bought a disposable phone as a kid? Maybe not, but I was always fascinated by those kinds of things and I did that! I thought that the idea of having a burner phone was interesting because it was another way to detach your name from whatever communication medium you were using. Nowadays anytime you communicate your name is always tied with that message.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://blog.ranvier.net/about/</link>
+      <pubDate>Fri, 29 Nov 2019 09:11:42 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/about/</guid>
+      <description> Hello! I&#39;m Jack, and this is my blog. decaby7e@ranvier.net Github LinkedIn
+ </description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.ranvier.net/2019/11/my-first-post/</link>
+      <pubDate>Fri, 29 Nov 2019 07:47:55 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/11/my-first-post/</guid>
+      <description>Every blog should have a first post, so here&amp;rsquo;s mine! This blog was created in December of 2019 by Jack Polk. In this site, I hope to write about my ongoing, past, and future projects, give tutorials on programming and Linux related systems, and share any useful information I can find.
+**This is my first post!**  #!/bin/bash echo &amp;quot;Hello world!&amp;quot; exit 0  </description>
+    </item>
+    
+  </channel>
+</rss>

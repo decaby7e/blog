@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/posts/</link>
+    <description>Recent content in Posts on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Dec 2019 21:08:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Digital Note Solutions</title>
+      <link>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</link>
+      <pubDate>Sun, 29 Dec 2019 21:08:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/best-digital-note-solutions/</guid>
+      <description>Best Digital Note Solutions Over a course of around 4 years, I have jumped from platform to platform, deperately in search of an elegant and effective digital note taking solution for my personal and professional needs. I needed to find something that would allow me to make messy notes and to-do lists for school while at the same time having a structured, organized system for various professional and personal development projects.</description>
+    </item>
+    
+    <item>
+      <title>Useful Software</title>
+      <link>https://blog.ranvier.net/2019/12/useful-software/</link>
+      <pubDate>Tue, 17 Dec 2019 03:00:27 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/useful-software/</guid>
+      <description>A common theme in this catalogue of software is that most entries here are good looking, lightweight, and easy to install (with Docker). Please send me any suggestions for additions should you have any!
+Ubuntu Customizations For my personal desktop, I run the latest distribution of Ubuntu, which at the time of writing is 19.10. On here, I have some minor customizations that vastly improve my QoL:
+ Plank - An amazing dock solution that is dead simple and aesthetically pleasing Conky - System monitor program that is complicated to configure but reliable and simple when its up and running PopOS GNOME Shell Theme - All the beauty of PopOS along with the vanilla experience of good ol&amp;rsquo; Ubuntu Papirus Icon Pack - Ubuntu icons are getting better but Papirus still has my heart Dotfiles - Dotfiles that I use for customization across my machines Arronax - Program for creating and modifying .</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>https://blog.ranvier.net/2019/12/markdown-cheatsheet/</link>
+      <pubDate>Tue, 03 Dec 2019 01:39:06 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/markdown-cheatsheet/</guid>
+      <description>DISCLAIMER: This cheatsheet was sourced from Adam Pritchard because he did a great job. This is intended as a quick reference and showcase. For more complete info, see John Gruber&amp;rsquo;s original spec and the Github-flavored Markdown info page.
+Note that there is also a Cheatsheet specific to Markdown Here if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out more Markdown tools.
+Table of Contents Headers
+Emphasis
+Lists</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.ranvier.net/2019/11/my-first-post/</link>
+      <pubDate>Fri, 29 Nov 2019 07:47:55 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/11/my-first-post/</guid>
+      <description>Every blog should have a first post, so here&amp;rsquo;s mine! This blog was created in December of 2019 by Jack Polk. In this site, I hope to write about my ongoing, past, and future projects, give tutorials on programming and Linux related systems, and share any useful information I can find.
+**This is my first post!**  #!/bin/bash echo &amp;quot;Hello world!&amp;quot; exit 0  </description>
+    </item>
+    
+  </channel>
+</rss>

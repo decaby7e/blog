@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/tags/bash/</link>
+    <description>Recent content in bash on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2019 23:49:20 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wireguard Management System - Concept Introduction</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</link>
+      <pubDate>Sat, 28 Dec 2019 23:49:20 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-management-system-concept-introduction/</guid>
+      <description>Introduction Wireguard is a beautiful thing 😭. But one thing that I have found to be a point of contention is the lack of a simple interface for managing an existing Wireguard server. From some light browsing, I have found a couple of solutions that are mainly geared towards enterprise use or paid services but no simple FOSS CLI alternatives. Therefore, I feel that it would be nice to have a simple Bash script or Python script to accomplish this task.</description>
+    </item>
+    
+  </channel>
+</rss>

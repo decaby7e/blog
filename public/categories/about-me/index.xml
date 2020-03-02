@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about-me on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/categories/about-me/</link>
+    <description>Recent content in about-me on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Nov 2019 09:11:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/categories/about-me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>https://blog.ranvier.net/about/</link>
+      <pubDate>Fri, 29 Nov 2019 09:11:42 +0000</pubDate>
+      
+      <guid>https://blog.ranvier.net/about/</guid>
+      <description> Hello! I&#39;m Jack, and this is my blog. decaby7e@ranvier.net Github LinkedIn
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>appindicator on Ranvier Blog</title>
+    <link>https://blog.ranvier.net/tags/appindicator/</link>
+    <description>Recent content in appindicator on Ranvier Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2019 20:03:30 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.ranvier.net/tags/appindicator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wireguard AppIndicator</title>
+      <link>https://blog.ranvier.net/2019/12/wireguard-appindicator/</link>
+      <pubDate>Mon, 30 Dec 2019 20:03:30 -0500</pubDate>
+      
+      <guid>https://blog.ranvier.net/2019/12/wireguard-appindicator/</guid>
+      <description>Wireguard AppIndicator At the time of writing, December of 2019, there exists no simple to use graphical interface for managing Wireguard connections as far as I&amp;rsquo;m concerned. To resolve this issue, I wanted to make an AppIndicator with the following capabilities:
+ View status of Wireguard interface Enable and disable Wireguard interface View and copy the IP address of the interface  I also wanted to be able to use this on both Gnome Shell systems and systems with only support for AppIndicators, so the script is able to be used as either a standalone script running in the background or as a Gnome Shell extension.</description>
+    </item>
+    
+  </channel>
+</rss>
